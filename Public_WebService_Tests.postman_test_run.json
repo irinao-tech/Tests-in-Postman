@@ -1,0 +1,276 @@
+{
+	"id": "6daef92a-3357-457b-a5d7-106fdb7d9179",
+	"name": "Public_WebService_Tests",
+	"timestamp": "2021-01-31T18:44:59.861Z",
+	"collection_id": "44a27278-d7af-4645-807f-f0c270fc681b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 18,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3cd4d683-9d5a-4438-9601-d16bc5948991",
+			"name": "list_users",
+			"url": "https://reqres.in/api/users",
+			"time": 152,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Email info found in the body": true,
+				"First name info found in the body": true,
+				"Last name info found in the body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email info found in the body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First name info found in the body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Last name info found in the body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Email info found in the body": true,
+					"First name info found in the body": true,
+					"Last name info found in the body": true
+				}
+			]
+		},
+		{
+			"id": "89c87194-9030-41bc-b8c2-2132f8c2426d",
+			"name": "list_user",
+			"url": "https://reqres.in/api/users/2",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Email info found in the body": true,
+				"First name info found in the body": true,
+				"Last name info found in the body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email info found in the body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First name info found in the body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Last name info found in the body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Email info found in the body": true,
+					"First name info found in the body": true,
+					"Last name info found in the body": true
+				}
+			]
+		},
+		{
+			"id": "c1ac6eb1-50e5-458e-af47-fbfc980bfa02",
+			"name": "user_not_found",
+			"url": "https://reqres.in/api/users/23",
+			"time": 119,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response body is null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response body is null": true
+				}
+			]
+		},
+		{
+			"id": "8472e10b-ad5e-4b3d-8d09-dcc9aaa7c0b3",
+			"name": "create",
+			"url": "https://reqres.in/api/users",
+			"time": 150,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Name value check": true,
+				"Job value check": true,
+				"Id value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				150
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Name value check": true,
+					"Job value check": true,
+					"Id value check": true
+				}
+			]
+		},
+		{
+			"id": "027e58f4-ca08-443d-b213-994cefbd4f24",
+			"name": "update",
+			"url": "https://reqres.in/api/users/23",
+			"time": 125,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Job value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Job value check": true
+				}
+			]
+		},
+		{
+			"id": "e7ddad29-6ad9-48e7-93da-c39ae359dc17",
+			"name": "register",
+			"url": "https://reqres.in/api/register",
+			"time": 97,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Token value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Token value check": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 709,
+	"collection": {
+		"requests": [
+			{
+				"id": "3cd4d683-9d5a-4438-9601-d16bc5948991",
+				"method": "GET"
+			},
+			{
+				"id": "89c87194-9030-41bc-b8c2-2132f8c2426d",
+				"method": "GET"
+			},
+			{
+				"id": "c1ac6eb1-50e5-458e-af47-fbfc980bfa02",
+				"method": "GET"
+			},
+			{
+				"id": "8472e10b-ad5e-4b3d-8d09-dcc9aaa7c0b3",
+				"method": "POST"
+			},
+			{
+				"id": "027e58f4-ca08-443d-b213-994cefbd4f24",
+				"method": "POST"
+			},
+			{
+				"id": "e7ddad29-6ad9-48e7-93da-c39ae359dc17",
+				"method": "POST"
+			}
+		]
+	}
+}
